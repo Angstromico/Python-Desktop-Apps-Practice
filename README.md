@@ -5,6 +5,7 @@ This repository is dedicated to practicing and developing desktop applications u
 ## Purpose
 
 The goal of this repository is to:
+
 - Practice building desktop applications with Python
 - Experiment with different GUI frameworks (Tkinter, PyQt, Kivy, etc.)
 - Learn desktop application architecture and design patterns
@@ -39,6 +40,7 @@ The main `app.py` file imports and runs the selected app from the `addons` folde
 When running multiple Tkinter apps, you have several options:
 
 #### Sequential Running
+
 Apps run one after another (close one to see the next):
 
 ```bash
@@ -46,6 +48,7 @@ python app_sequential.py
 ```
 
 #### Parallel Running
+
 All apps open simultaneously using threading:
 
 ```bash
@@ -53,6 +56,7 @@ python app_parallel.py
 ```
 
 #### Controlled Running
+
 Mixed approach with manual window control:
 
 ```bash
@@ -70,14 +74,31 @@ python addons/basic_app.py
 ```
 
 This basic application demonstrates:
+
 - Window creation and configuration
 - Widget placement (labels, entry fields, buttons)
 - Event handling and user interaction
 - Input validation and dynamic UI updates
 
+### Sales Data Analyzer
+
+The repository now includes a dedicated Sales Data interface:
+
+- `addons/sales_data.py`
+- `addons/README_sales_data.md`
+
+It reads `SalesData.xlsx` and allows interactive queries for top/worst values by group with customizable N, filtering, and export.
+
+```bash
+python app.py  # also runs the existing examples and then the sales data app
+```
+
+Detailed usage and options are available in `addons/README_sales_data.md`.
+
 ## Future Development
 
 As you progress through desktop application development, this repository will grow with:
+
 - More complex applications
 - Different GUI frameworks
 - Database integration

@@ -1,0 +1,11 @@
+Grouping: Sales Representative
+Aggregator: Total Sale Amount
+Order: Worst 10
+Rows considered: 5684
+
+Rank	Name	Total Sale Amount
+1	Frances Warren	72,790.82
+2	Diane Gonzalez	97,819.18
+3	Randy Watson	113,115.38
+4	Patrick Graham	167,833.92
+5	Sara Snyder	268,212.07

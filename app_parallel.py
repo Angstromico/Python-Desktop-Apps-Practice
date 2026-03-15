@@ -10,11 +10,13 @@ def main():
     print("Running all apps at the same time...")
     
     # List of apps to run
+    from addons.sales_data import sales_data_app
     apps = [
         ("Radio Button", radio_button_app),
         ("Checkbox", checkbox_app),
         ("Combobox", combobox_app),
-        ("Widget Text", widget_text_app)
+        ("Widget Text", widget_text_app),
+        ("Sales Data", sales_data_app)
     ]
     
     # Create and start threads for each app

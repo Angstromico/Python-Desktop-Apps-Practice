@@ -18,13 +18,17 @@ def main():
     def run_widget_text():
         widget_text_app()
     
+    from addons.sales_data import sales_data_app
+
     t1 = threading.Thread(target=radio_button_app, daemon=True)
     t2 = threading.Thread(target=run_combobox, daemon=True)
     t3 = threading.Thread(target=run_widget_text, daemon=True)
+    t4 = threading.Thread(target=sales_data_app, daemon=True)
     
     t1.start()
     t2.start()
     t3.start()
+    t4.start()
     
     # Start main loop for the first window
     window1.mainloop()

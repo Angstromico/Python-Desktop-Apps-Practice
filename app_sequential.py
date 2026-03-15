@@ -16,6 +16,10 @@ def main():
     
     print("4. Widget text app (close it to continue)")
     widget_text_app()
+
+    print("5. Sales Data app (close it to continue)")
+    from addons.sales_data import sales_data_app
+    sales_data_app()
     
     print("All apps completed!")
 
