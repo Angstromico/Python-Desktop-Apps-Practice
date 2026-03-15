@@ -1,9 +1,10 @@
 import tkinter as tk
+from addons.generals import window_width_height
 
 def run_app():
     window = tk.Tk()
     window.title("My App")
-    window.geometry('600x400')
+    window.geometry(window_width_height)
 
     input_text = tk.StringVar()
 

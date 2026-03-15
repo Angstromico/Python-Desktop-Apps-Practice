@@ -1,0 +1,1 @@
+window_width_height = "600x400"
