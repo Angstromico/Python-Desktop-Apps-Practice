@@ -1,6 +1,6 @@
 def main():
-    from addons.basic_app import run_app
-    
+    from addons.exes import run_app
+
     run_app()
 
 
