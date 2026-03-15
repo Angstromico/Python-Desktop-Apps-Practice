@@ -1,6 +1,7 @@
 def main():
-    from addons.exes import combobox_app, run_app
+    from addons.exes import combobox_app, run_app, checkbox_app
 
+    checkbox_app()
     combobox_app()
     run_app()
 
