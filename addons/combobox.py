@@ -3,7 +3,7 @@ from tkinter import ttk
 from addons.generals import generate_window
 
 def combobox_app(): 
-    window = generate_window(tk)
+    window = generate_window(tk, 'Combobox App')
     lbl = tk.Label(window, text="Pick one option...", font=("Arial Bold", 30))
     lbl.grid(column=0, row=0, padx=5, pady=5)
     combo = ttk.Combobox(window, values=["Item 1", "Item 2", "Item 3", 4]) 
