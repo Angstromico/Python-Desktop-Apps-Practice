@@ -1,10 +1,8 @@
 import tkinter as tk
-from addons.generals import window_width_height
+from addons.generals import generate_window
 
 def run_app():
-    window = tk.Tk()
-    window.title("My App")
-    window.geometry(window_width_height)
+    window = generate_window(tk)
 
     input_text = tk.StringVar()
 
