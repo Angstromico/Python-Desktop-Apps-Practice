@@ -1,7 +1,7 @@
 import tkinter as tk
 from addons.generals import generate_window
 
-def checkbox_app(): 
+def checkbox_app_no_loop(): 
     window = generate_window(tk, 'Checkbox App', "800x600")
 
     label = tk.Label(window, text="Check the boxes below...", font=("Arial Bold", 30))
@@ -30,9 +30,4 @@ def checkbox_app():
     chk2 = tk.Checkbutton(window, text='Java', var=num2, onvalue=1, offvalue=0, command=show_code_lang_selection)
     chk2.pack()
 
-    window.mainloop()
-
-
-
-if __name__ == "__main__":
-    checkbox_app()
+    return window  # Return window instead of calling mainloop

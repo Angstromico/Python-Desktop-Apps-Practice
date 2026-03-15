@@ -34,6 +34,33 @@ python app.py
 
 The main `app.py` file imports and runs the selected app from the `addons` folder. You can change which app runs by modifying the import statement in the `main()` function.
 
+### Running Multiple Apps
+
+When running multiple Tkinter apps, you have several options:
+
+#### Sequential Running
+Apps run one after another (close one to see the next):
+
+```bash
+python app_sequential.py
+```
+
+#### Parallel Running
+All apps open simultaneously using threading:
+
+```bash
+python app_parallel.py
+```
+
+#### Controlled Running
+Mixed approach with manual window control:
+
+```bash
+python app_controlled.py
+```
+
+**Note**: Tkinter's `window.mainloop()` is a blocking call. This means apps will run sequentially by default. Use threading to run multiple apps simultaneously.
+
 ### Running Individual Apps
 
 You can also run individual apps directly from the addons folder:
