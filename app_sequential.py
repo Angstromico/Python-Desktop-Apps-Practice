@@ -1,7 +1,7 @@
 def main():
     from addons.checkbox import checkbox_app
     from addons.combobox import combobox_app
-    from addons.basic_app import run_app
+    from addons.widget_text import widget_text_app
     from addons.radio_button import radio_button_app
 
     print("Running apps one by one...")
@@ -14,8 +14,8 @@ def main():
     print("3. Combobox app (close it to continue)")
     combobox_app()
     
-    print("4. Basic app (close it to continue)")
-    run_app()
+    print("4. Widget text app (close it to continue)")
+    widget_text_app()
     
     print("All apps completed!")
 
